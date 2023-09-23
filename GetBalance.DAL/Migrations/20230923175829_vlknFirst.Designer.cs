@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GetBalance.DAL.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230922193508_gvnFirst")]
-    partial class gvnFirst
+    [Migration("20230923175829_vlknFirst")]
+    partial class vlknFirst
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GetBalance.DAL
 {
-	public class Context : DbContext
+	public class AppDbContext : DbContext
 	{
 		public DbSet<User> Users { get; set; }
 		public DbSet<UserDetail> UserDetails { get; set; }
@@ -20,7 +20,7 @@ namespace GetBalance.DAL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			optionsBuilder.UseSqlServer(@"Server=DESKTOP-GUVEN;Database=HS12-GetBalanceDB;User Id=sa;Password=123456;"); //TODO:Change Connection string
+			optionsBuilder.UseSqlServer("Server=DESKTOP-HF14TQL;Database=Nortwind;Trusted_Connection=True;"); //TODO:Change Connection string
         }
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)

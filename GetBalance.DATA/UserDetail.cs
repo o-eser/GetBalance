@@ -17,8 +17,8 @@ namespace GetBalance.DATA
 		public double Height { get; set; }
 		public double CurrentWeight { get; set; }
 		public int UserId { get; set; }
-
-		public User User { get; set; }
+        public ActivityLevel ActivityLevel { get; set; } //Eklendi -volkan.
+        public User User { get; set; }
         public UserTarget UserTarget { get; set; }
     }
 }
