@@ -20,7 +20,7 @@ namespace GetBalance.DAL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			optionsBuilder.UseSqlServer("Server=DESKTOP-HF14TQL;Database=Nortwind;Trusted_Connection=True;"); //TODO:Change Connection string
+			optionsBuilder.UseSqlServer("Server=DESKTOP-HF14TQL;Database=DietProjeDb;Trusted_Connection=True;"); //TODO:Change Connection string
         }
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -39,7 +39,7 @@ namespace GetBalance.UI
             }
             else
             {
-                MessageBox.Show("Wrong Username or Password");
+                MessageBox.Show("Kullanýcý Adý veya Parola Yanlýþ");
                 txtUserName.Text = txtPassword.Text = "";
             }
 
