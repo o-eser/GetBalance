@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserKayitEkrani));
             dtpBirthdate = new DateTimePicker();
             txtName = new TextBox();
             txtLastname = new TextBox();
@@ -48,6 +49,8 @@
             btnAdd = new Button();
             label9 = new Label();
             cmbActivityLevel = new ComboBox();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // dtpBirthdate
@@ -117,7 +120,7 @@
             // radioBtnMan
             // 
             radioBtnMan.AutoSize = true;
-            radioBtnMan.Location = new Point(127, 214);
+            radioBtnMan.Location = new Point(127, 224);
             radioBtnMan.Name = "radioBtnMan";
             radioBtnMan.Size = new Size(53, 19);
             radioBtnMan.TabIndex = 5;
@@ -128,7 +131,7 @@
             // radioBtnWoman
             // 
             radioBtnWoman.AutoSize = true;
-            radioBtnWoman.Location = new Point(255, 214);
+            radioBtnWoman.Location = new Point(195, 224);
             radioBtnWoman.Name = "radioBtnWoman";
             radioBtnWoman.Size = new Size(55, 19);
             radioBtnWoman.TabIndex = 6;
@@ -139,7 +142,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(50, 216);
+            label5.Location = new Point(43, 228);
             label5.Name = "label5";
             label5.Size = new Size(52, 15);
             label5.TabIndex = 3;
@@ -195,7 +198,7 @@
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(240, 381);
+            btnAdd.Location = new Point(393, 271);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(172, 44);
             btnAdd.TabIndex = 10;
@@ -220,11 +223,22 @@
             cmbActivityLevel.Size = new Size(121, 23);
             cmbActivityLevel.TabIndex = 11;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(393, 98);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(151, 149);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 12;
+            pictureBox1.TabStop = false;
+            // 
             // UserKayitEkrani
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
             Controls.Add(cmbActivityLevel);
             Controls.Add(btnAdd);
             Controls.Add(txtPassword);
@@ -248,6 +262,7 @@
             Name = "UserKayitEkrani";
             Text = "UserKayitEkrani";
             Load += UserKayitEkrani_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -274,5 +289,6 @@
         private Button btnAdd;
         private Label label9;
         private ComboBox cmbActivityLevel;
+        private PictureBox pictureBox1;
     }
 }

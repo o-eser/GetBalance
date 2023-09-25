@@ -72,11 +72,24 @@ namespace GetBalance.UI
             DateTime bday = dtpBirthdate.Value.Date;
             ActivityLevel activityLevel = (ActivityLevel)cmbActivityLevel.SelectedValue;
 
+
             User user = new User()
             {
                 Email = email,
                 Password = password,
-                UserDetail = new UserDetail() { FirstName = firstname, LastName = lastname, Height = height, CurrentWeight = weight, BirthDate = bday, ActivityLevel = activityLevel, Gender = gender }
+                UserDetail = new UserDetail()
+                {
+                    FirstName = firstname,
+                    LastName = lastname,
+                    Height = height,
+                    CurrentWeight = weight,
+                    BirthDate = bday,
+                    ActivityLevel = activityLevel,
+                    Gender = gender,
+
+                    UserTarget = new UserTarget() { StartingDate = DateTime.Now, StartingWeight = weight, } // Devam edilecek.
+                }
+
 
             };
 

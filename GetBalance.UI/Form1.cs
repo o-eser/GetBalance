@@ -28,10 +28,10 @@ namespace GetBalance.UI
             //List<User> usersList = userRepo.GetAll();
 
             
-            context.Users.FirstOrDefault(u => u.Email == username && u.Password == password);
+            var userConfirmation = context.Users.FirstOrDefault(u => u.Email == username && u.Password == password);
             //usersList.FirstOrDefault(u => u.Email == username && u.Password == password); //TODO: tekrar bakýlacak.
 
-            if (username != null)
+            if (userConfirmation != null)
             {
                 UserKayitEkrani userKayitAlmaFormu = new UserKayitEkrani();
                 userKayitAlmaFormu.Show();
