@@ -189,7 +189,7 @@
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(label2);
-            panel1.Location = new Point(45, 292);
+            panel1.Location = new Point(38, 248);
             panel1.Name = "panel1";
             panel1.Size = new Size(478, 365);
             panel1.TabIndex = 10;
@@ -345,14 +345,14 @@
             // 
             pnlYanPanel.Location = new Point(546, 35);
             pnlYanPanel.Name = "pnlYanPanel";
-            pnlYanPanel.Size = new Size(542, 622);
+            pnlYanPanel.Size = new Size(517, 578);
             pnlYanPanel.TabIndex = 11;
             // 
             // FormHomePage2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1100, 685);
+            ClientSize = new Size(1075, 625);
             Controls.Add(pnlYanPanel);
             Controls.Add(panel1);
             Controls.Add(pictureBox5);
