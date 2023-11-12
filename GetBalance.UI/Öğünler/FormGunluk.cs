@@ -292,7 +292,6 @@ namespace GetBalance.UI
 				listViewItem.SubItems.Add(item.TotalCalorie.ToString());
 				listViewItem.SubItems.Add(item.TotalCarb.ToString());
 				listViewItem.SubItems.Add(item.TotalProtein.ToString());
-				listViewItem.SubItems.Add(item.TotalFat.ToString());
 
 				listViewItem.Tag = item.FoodMeal;
 
